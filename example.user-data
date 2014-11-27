@@ -1,0 +1,19 @@
+#cloud-config
+hostname: example
+fqdn: example.m7.yx.fi
+manage_etc_hosts: True
+
+ssh_pwauth: False
+password: ubuntu
+chpasswd: { expire: False }
+
+ssh_authorized_keys:
+ - ssh-rsa AAAAB.....
+
+package_upgrade: true
+
+packages:
+ - vim-tiny
+
+runcmd:
+ - update-alternatives --set editor /usr/bin/vim.tiny
