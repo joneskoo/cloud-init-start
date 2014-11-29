@@ -70,6 +70,6 @@ fc20-%: %-fc20-disk1.qcow2 %-seed.img
 		|| true
 
 # Do not remove image files as "intermediate files"
-.PRECIOUS: %-ubuntu-disk1.img %-seed.img
+.PRECIOUS: %-ubuntu-disk1.img %-seed.img %-fc20-disk1.qcow2
 
 #################################################
