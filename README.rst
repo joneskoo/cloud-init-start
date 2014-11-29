@@ -26,6 +26,9 @@ The cloud-config user data looks something like this:
    
    package_upgrade: true
 
+You can find more examples of what you can do with cloud-config
+from the `cloud-init documentation <http://cloudinit.readthedocs.org/en/latest/topics/examples.html>`_.
+
 If you saved the cloud-config to file myhost01.example, you can
 now launch a virtual machine.
 
