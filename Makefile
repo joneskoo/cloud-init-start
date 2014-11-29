@@ -52,7 +52,7 @@ fedora-fc20-amd64-root.qcow2: dist/Fedora-x86_64-20-20140407-sda.qcow2
 ubuntu-%: %-ubuntu-disk1.qcow2 %-seed.img
 	virt-install --nographics --noreboot \
 		--name $* \
-		--ram 512 \
+		--ram 768 \
 		--disk path=$<,format=qcow2 \
 		--cdrom $*-seed.img \
 		--boot=hd --livecd \
@@ -62,7 +62,7 @@ ubuntu-%: %-ubuntu-disk1.qcow2 %-seed.img
 fc20-%: %-fc20-disk1.qcow2 %-seed.img
 	virt-install --nographics --noreboot \
 		--name $* \
-		--ram 512 \
+		--ram 1024 \
 		--disk path=$<,format=qcow2 \
 		--cdrom $*-seed.img \
 		--boot=hd --livecd \
