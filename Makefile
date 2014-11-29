@@ -28,6 +28,8 @@ fedora-fc20-amd64-root.qcow2: dist/Fedora-x86_64-20-20140407-sda.qcow2
 	qemu-img convert -O qcow2 $< $@
 	qemu-img resize $@ +8G
 
+.PRECIOUS: ubuntu-trusty-amd64-10GB-root.qcow2 fedora-fc20-amd64-root.qcow2
+
 #################################################
 ## Clone template to root filesystem
 
