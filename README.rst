@@ -1,7 +1,8 @@
-ubuntu-cloud-init
+cloud-init-start
 =================
 
-Quickly bring up Ubuntu Cloud instances in local KVM with virsh using cloud-init
+Quickly bring up Ubuntu or FC20 Cloud instances in local
+KVM with virsh using cloud-config.
 
 Usage:
 
