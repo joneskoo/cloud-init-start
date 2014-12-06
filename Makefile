@@ -54,7 +54,7 @@ ubuntu-%: %-ubuntu-disk1.qcow2 %-seed.img
 		--disk path=$<,format=qcow2 \
 		--cdrom $*-seed.img \
 		--boot=hd --livecd \
-		--bridge=br0 -m `python ./mac-generator.py` \
+		--bridge=br0 -m `python ./mac-generator.py $*` \
 		|| true
 
 fc20-%: %-fc20-disk1.qcow2 %-seed.img
@@ -64,7 +64,7 @@ fc20-%: %-fc20-disk1.qcow2 %-seed.img
 		--disk path=$<,format=qcow2 \
 		--cdrom $*-seed.img \
 		--boot=hd --livecd \
-		--bridge=br0 -m `python ./mac-generator.py` \
+		--bridge=br0 -m `python ./mac-generator.py $*` \
 		|| true
 
 # Do not remove image files as "intermediate files"
