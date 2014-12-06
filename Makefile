@@ -1,3 +1,4 @@
+# Copyright 2014 Joonas Kuorilehto
 #################################################
 ## ORIGINAL OFFICIAL IMAGES
 
