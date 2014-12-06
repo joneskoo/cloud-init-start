@@ -4,6 +4,15 @@ cloud-init-start
 Quickly bring up Ubuntu or FC20 Cloud instances in local
 KVM with virsh using cloud-config.
 
+Requirements:
+
+ * Make
+ * wget
+ * cloud-utils (cloud-localds)
+ * qemu/kvm
+ * libvirt (virsh)
+ * virtinst (virt-install)
+
 Usage:
 
 .. code-block:: shell
