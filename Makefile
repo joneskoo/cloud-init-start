@@ -2,10 +2,12 @@
 ## ORIGINAL OFFICIAL IMAGES
 
 dist/trusty-server-cloudimg-amd64-disk1.img:
+	mkdir -p dist
 	wget -O $@ https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-disk1.img
 
 # Fedora
 dist/Fedora-x86_64-20-20140407-sda.qcow2:
+	mkdir -p dist
 	wget -O $@ http://download.fedoraproject.org/pub/fedora/linux/updates/20/Images/x86_64/Fedora-x86_64-20-20140407-sda.qcow2
 	(cd dist && \
 	 echo "ffd240c32b676179608e50d8640fcd1ac6b9bb67f1486c703c47b51dc52daf2f *Fedora-x86_64-20-20140407-sda.qcow2" \
